@@ -22,7 +22,7 @@ export const UserProfile = ({ user }) => {
         <div>
           <img className="image" src={profile.details.avatar_url} alt="" />
         </div>
-        <h1>{profile.name}</h1>
+        <h1>{profile.details.name}</h1>
       </div>
       <div className="row">
         <div className="column">

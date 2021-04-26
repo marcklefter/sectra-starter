@@ -97,4 +97,14 @@ Instead of fetching all data for a component _and_ its child components at once,
 
   > Note: You'll have to create an object that maps URLs to Promises.
 
+  Add logic inside the `useFetch` hook to check whether any resources are being prefetched.
+
   In the _App_ component (in `index.jsx`), in the `selectUser` method, add calls to the `prefetch` function with the URLs for repos and followers for the selected user.
+
+## Part 4: Using a 3rd party library (SWR) - Optional
+
+As you've probably noticed, building a comprehensive data fetching solution is not an easy feat; features such as cache management, deduping requests, automatic revalidation and prefetching can take a lot of effort to implement correctly and maintain.
+
+For these and other reasons, it's recommended to use a robust 3rd party library for efficient data fetching. There are several libraries available, such as [SWR](https://swr.vercel.app/) and [react-query](https://react-query.tanstack.com/).
+
+For our purposes, SWR is an excellent choice: follow the [documentation](https://swr.vercel.app/getting-started) and refactor the data fetching code in the _UserProfile_, _Repos_ and _Followers components to use the SWR library's `useSWR` hook.

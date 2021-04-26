@@ -2,9 +2,9 @@ import './index.css';
 
 // ...
 
-// import { App } from './nodeClient';
+import { App } from './nodeClient';
 
-// App();
+App();
 
 // ...
 
@@ -16,6 +16,7 @@ import './index.css';
 // import { App } from './debounce';
 // import { App } from './useTask';
 // import { App } from './dataFetching';
+// import { App } from './todo';
 
 // ReactDOM.render(
 //   <React.StrictMode>
