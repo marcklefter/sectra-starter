@@ -2,9 +2,9 @@ import './index.css';
 
 // ...
 
-// import { App } from './nodeClient';
+import { App } from './nodeClient';
 
-// App();
+App();
 
 // ...
 
